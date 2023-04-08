@@ -6,7 +6,7 @@ body{
   opacity: .9;
   display: grid;
   place-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: var(--fs-default);
   font-family: var(--ff-regular);
 }
