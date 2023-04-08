@@ -14,7 +14,8 @@ body{
 .container{
   display: flex;
   flex-direction: column;
-  width: 375px;
+  min-width: 350px;
+  max-width: 450px;
   padding: 1rem;
   justify-content: space-around;
 }
@@ -75,7 +76,7 @@ form{
   padding: .875rem;
   font-size: .875rem;
   font-weight: var(--fw-black);
-  border: 1px solid black;
+  border: 1px solid rgb(231, 224, 224);
 }
 
 .container__form button{
@@ -85,6 +86,7 @@ form{
   text-transform: uppercase;
   color: white;
   font-weight: var(--fw-bold);
+  border-radius: .3rem;
 }
 
 .form__terms{
