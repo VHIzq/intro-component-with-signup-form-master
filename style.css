@@ -1,9 +1,9 @@
 @import url(reset.css);
 @import url(config.css);
 
-body{
+body {
   background-color: var(--clr-primary-red);
-  opacity: .9;
+  opacity: 0.9;
   display: grid;
   place-items: center;
   overflow-x: hidden;
@@ -11,7 +11,7 @@ body{
   font-family: var(--ff-regular);
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   min-width: 350px;
@@ -20,32 +20,52 @@ body{
   justify-content: space-around;
 }
 
-.container__text{
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.container__text {
   color: whitesmoke;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
-.container__text h1{
+@media (min-width: 600px) {
+  .container__text {
+    min-width: 400px;
+    height: 200px;
+  }
+}
+
+.container__text h1 {
   padding: 0 3rem;
   font-size: 1.75rem;
   color: white;
 }
 
-.container__text h3{
+.container__text h3 {
   font-size: 1rem;
   padding: 2rem;
   font-weight: var(--fw-bold);
 }
 
-.container__form{
+.container__form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.form__try{
+@media (min-width: 600px) {
+  .container__form {
+    min-width: 450px;
+  }
+}
+
+.form__try {
   background-color: var(--clr-primary-blue);
   color: whitesmoke;
   padding: 1.5rem 1rem;
@@ -57,11 +77,11 @@ body{
   font-weight: var(--fw-black);
 }
 
-form{
-  --radius: .6rem
+form {
+  --radius: 0.6rem;
 }
 
-.container__form form{
+.container__form form {
   border-radius: var(--radius);
   background-color: white;
   padding: 1rem;
@@ -70,33 +90,33 @@ form{
   gap: 1rem;
 }
 
-.container__form input{
-  border-radius: .3rem;
+.container__form input {
+  border-radius: 0.3rem;
   outline: none;
-  padding: .875rem;
-  font-size: .875rem;
+  padding: 0.875rem;
+  font-size: 0.875rem;
   font-weight: var(--fw-black);
   border: 1px solid rgb(231, 224, 224);
 }
 
-.container__form button{
-  padding: .875rem 1rem;
+.container__form button {
+  padding: 0.875rem 1rem;
   background-color: var(--clr-primary-green);
   border: none;
   text-transform: uppercase;
   color: white;
   font-weight: var(--fw-bold);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
-.form__terms{
-  font-size: .7rem;
+.form__terms {
+  font-size: 0.7rem;
   text-align: center;
   padding: 0 2rem;
   color: var(--clr-neutral-gray);
 }
 
-.form__terms span{
+.form__terms span {
   color: var(--clr-primary-red);
   font-weight: var(--fw-black);
 }
