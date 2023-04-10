@@ -32,27 +32,31 @@
             <input
               type="text"
               name="first-name"
-              id="first-name"
+              id="firstName"
               placeholder="First Name"
-              />
+              /> 
+              <span class='error'>First Name cannot be empty</span>
               <input
               type="text"
-              name="last-name"
+              name="lastName"
               id="last-name"
               placeholder="Last Name"
             />
+            <span class='error'>Last Name cannot be empty</span>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Email Address"
             />
+            <span class='error'>Looks like this is not an email</span>
             <input
               type="password"
               name="password"
               id="password"
               placeholder="Password"
             />
+            <span class='error'>Password cannot be empty</span>
             <button type="submit">Claim your free trial</button>
             <div class="form__terms">
               By clicking the button, you are agreeing to our
@@ -63,4 +67,5 @@
       </div>
     </main>
   </body>
+  <script src="main.js"></script>
 </html>

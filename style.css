@@ -120,3 +120,10 @@ form {
   color: var(--clr-primary-red);
   font-weight: var(--fw-black);
 }
+
+form span.error {
+  font-size: .7rem;
+  font-style: italic;
+  color: var(--clr-primary-red);
+  display: none;
+}
