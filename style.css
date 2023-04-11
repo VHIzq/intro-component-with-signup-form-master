@@ -121,7 +121,7 @@ form {
   font-weight: var(--fw-black);
 }
 
-form span.error {
+form span {
   font-size: .7rem;
   font-style: italic;
   color: var(--clr-primary-red);
