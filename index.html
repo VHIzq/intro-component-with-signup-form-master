@@ -2,16 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro component with sign up form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -26,38 +20,39 @@
         </section>
         <section class="container__form">
           <div class="form__try">
-            <span>Try it free 7 days</span> then<br/> $20/mo. thereafter
+            <span>Try it free 7 days</span> then<br />
+            $20/mo. thereafter
           </div>
-          <form action="post">
+          <form id='form'>
             <input
               type="text"
               name="first-name"
               id="firstName"
               placeholder="First Name"
-              /> 
-              <span class='error'>First Name cannot be empty</span>
-              <input
+            />
+            <span class="error-name">First Name cannot be empty</span>
+            <input
               type="text"
               name="lastName"
               id="last-name"
               placeholder="Last Name"
             />
-            <span class='error'>Last Name cannot be empty</span>
+            <span class="error-last">Last Name cannot be empty</span>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Email Address"
             />
-            <span class='error'>Looks like this is not an email</span>
+            <span class="error-email">Looks like this is not an email</span>
             <input
               type="password"
               name="password"
               id="password"
               placeholder="Password"
             />
-            <span class='error'>Password cannot be empty</span>
-            <button type="submit">Claim your free trial</button>
+            <span class="error-password">Password cannot be empty</span>
+            <button id='submit' type="submit">Claim your free trial</button>
             <div class="form__terms">
               By clicking the button, you are agreeing to our
               <span>Terms and Services</span>
